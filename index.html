@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+         
+
+          <label for="firstValue">First Value:</label> <input type="text" id="firstValue" name="">
+        </td>
+
+        <td>
+          
+
+          <label for="secondValue">Second Value:</label> <input type="text" id="secondValue" name="">
+        </td>
+
+        <td>
+          
+
+          <label for="result">Result:</label> <input type="text" id="result" name="">
+        </td>
+      </tr>
+    </table>
+
+    <input
+      type="button"
+      id="add"
+      value="Addition"
+      onclick="calculate(1);"
+      name=""
+    />
+    <input
+      type="button"
+      id="sub"
+      value="Subtraction"
+      onclick="calculate(2);"
+      name=""
+    />
+    <input
+      type="button"
+      id="mull"
+      value="Multiplication"
+      onclick="calculate(3);"
+      name=""
+    />
+    <input
+      type="button"
+      id="div"
+      value="Division"
+      onclick="calculate(4);"
+      name=""
+    />
+      
+    <script type="text/javascript">
+        function calculate(choice){
+            var n1 = document.getElementById(firstValue).value * 1;
+            var n1 = document.getElementById(secondValue).value * 1;
+            var result;
+            switch(choice) {
+                case 1:
+                result = n1 + n2;
+                break;
+                
+                case 2:
+                result = n1 - n2;
+                break;
+
+                case 3:
+                result = n1 * n2;
+                break;
+
+                case 4:
+                result = n1 / n2;
+                break;
+            }
+
+            document.getElementById("Result").value = result;
+        }
+    </script>
+
+  </body>
+</html>
